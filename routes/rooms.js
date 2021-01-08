@@ -33,4 +33,17 @@ router.post('/addRoom',async function(req,res){
     }
 })
 
+router.get('/getRoom',async function(req,res){
+
+    try {
+
+      console.log("<----------------------success------------------------------------>");
+    
+    } catch (error) {
+        res.json({
+            "message" : "Your Request To Add Room is Not Successful"
+          })
+    }
+})
+
 module.exports = router;
